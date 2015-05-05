@@ -2,19 +2,7 @@ var number = 16;
 var color = "#660066";
 $(document).ready(function(){
 	initialCanvas();
-	/*var table = document.getElementById("canvas");
-    for(i = 0; i <= number; i++)
-	{
-		var row = table.insertRow(i);
-		for(j = 0; j <= number; j++)
-		{
-			row.insertCell(j);
-		}
-	};
-	$('table tbody td').mouseover(function() {
-		$(this).addClass('selectedCell');
-	});*/
-	 $('#default').click(initialCanvas); 
+	$('#default').click(initialCanvas); 
 	$('#resize').click(resizeCanvas);
 	$('#color').click(createColor);
 	
@@ -30,10 +18,10 @@ $(document).ready(function(){
 			{
 			row.insertCell(j);
 			}
-	};
-	$('table tbody td').mouseover(function() {
-		$(".selectedCell").css("backgroundColor", color);
-		$(this).addClass('selectedCell');
+		};
+		$('table tbody td').mouseover(function() {
+			$(".selectedCell").css("backgroundColor", color);
+			$(this).addClass('selectedCell');
 	});}
 	
 	function resizeCanvas() {
@@ -51,11 +39,7 @@ $(document).ready(function(){
 		$('table tbody td').mouseover(function() {
 			$(".selectedCell").css("backgroundColor", color);
 			 $(this).addClass('selectedCell');
-		  })/*.mouseout(function() {
-			 $(this).removeClass('selectedCell');
-		  }).click(function() {
-			 alert($('td:first', this).text());
-		  });*/
+		  })
 		};
 	
 	function createColor() {
@@ -74,11 +58,7 @@ $(document).ready(function(){
 		$('table tbody td').mouseover(function() {
 			$(".selectedCell").css("backgroundColor", color);
 			 $(this).addClass('selectedCell');
-		  })/*.mouseout(function() {
-			 $(this).removeClass('selectedCell');
-		  }).click(function() {
-			 alert($('td:first', this).text());
-		  });*/
+		  })
 		};
     
 });
