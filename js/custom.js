@@ -11,10 +11,10 @@ $(document).ready(function(){
 		var table = document.getElementById("canvas");
 		number = 16;
 		color = "#660066";
-		for(i = 0; i <= number; i++)
+		for(i = 0; i < number; i++)
 		{
 			var row = table.insertRow(i);
-			for(j = 0; j <= number; j++)
+			for(j = 0; j < number; j++)
 			{
 			row.insertCell(j);
 			}
@@ -28,10 +28,10 @@ $(document).ready(function(){
 		$( "#canvas" ).empty();
 		number = prompt("How 'pixels' would you like on each side? (1-100)");
 		var table = document.getElementById("canvas");
-		for(i = 0; i <= number; i++)
+		for(i = 0; i < number; i++)
 		{
 			var row = table.insertRow(i);
-			for(j = 0; j <= number; j++)
+			for(j = 0; j < number; j++)
 			{
 				row.insertCell(j);
 			}
@@ -47,10 +47,10 @@ $(document).ready(function(){
 		color = prompt("What color would you like to use?")
 			var table = document.getElementById("canvas");
 		$(".selectedCell").css("backgroundColor", color);
-		for(i = 0; i <= number; i++)
+		for(i = 0; i < number; i++)
 		{
 			var row = table.insertRow(i);
-			for(j = 0; j <= number; j++)
+			for(j = 0; j < number; j++)
 			{
 				row.insertCell(j);
 			}
@@ -60,8 +60,5 @@ $(document).ready(function(){
 			 $(this).addClass('selectedCell');
 		  })
 		};
-    
+	
 });
-
-
-
